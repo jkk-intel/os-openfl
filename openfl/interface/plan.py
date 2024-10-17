@@ -120,7 +120,7 @@ def initialize(
         install_reqs (bool): Whether to install packages listed under 'requirements.txt'.
     """
 
-    print('plan init MY CUSTOM commit !!!')
+    logger.info('plan init MY CUSTOM commit !!!')
 
     for p in [plan_config, cols_config, data_config]:
         if is_directory_traversal(p):
