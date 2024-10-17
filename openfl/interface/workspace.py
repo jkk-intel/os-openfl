@@ -116,6 +116,7 @@ def create_(prefix, template):
         prefix: The prefix for the directories to be created.
         template: The template to use for creating the workspace.
     """
+    print('workspace create MY CUSTOM commit !!!')
     if is_directory_traversal(prefix):
         echo("Workspace name or path is out of the openfl workspace scope.")
         sys.exit(1)
