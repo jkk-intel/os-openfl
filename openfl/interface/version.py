@@ -12,12 +12,12 @@ logger = getLogger(__name__)
 @group()
 @pass_context
 def version(context):
-    """Manage Federated Learning Plans.
+    """Manage Federated Learning version.
 
     Args:
         context (click.core.Context): Click context.
     """
-    context.obj["group"] = "test"
+    context.obj["group"] = "version"
 
 
 @version.command(name='info')
