@@ -162,3 +162,8 @@ def certify_(name, token_with_cert, certs_path, ca_path):
     ca_path = Path(ca_path).absolute()
     certs_path.mkdir(parents=True, exist_ok=True)
     certify(name, certs_path, token_with_cert, ca_path)
+
+
+@pki.command(name="test")
+def test_(name, token_with_cert, certs_path, ca_path):
+    print('test cli')

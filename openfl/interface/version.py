@@ -16,8 +16,5 @@ def version(context):
 
 
 @version.command(name='info')
-@pass_context
-def info(
-    context,
-):
+def info():
    logger.info('my custom command from opensource OpenFL dev branch')
