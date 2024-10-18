@@ -167,4 +167,9 @@ def certify_(name, token_with_cert, certs_path, ca_path):
 @pki.command(name="testing")
 @option("-n", "--name", required=True)
 def testing_(name):
+    """Create testing space.
+
+    Args:
+        name (str): testing name.
+    """
     print(f'testing cli {name}')
