@@ -162,3 +162,15 @@ def certify_(name, token_with_cert, certs_path, ca_path):
     ca_path = Path(ca_path).absolute()
     certs_path.mkdir(parents=True, exist_ok=True)
     certify(name, certs_path, token_with_cert, ca_path)
+
+@pki.command(name="testing")
+@option("-n", "--name", required=True)
+def testing_(name):
+    """Just testing.
+
+    Args:
+        name (str): Common name for following certificate (aggregator fqdn or
+            collaborator name).
+    """
+    print('test')
+    
